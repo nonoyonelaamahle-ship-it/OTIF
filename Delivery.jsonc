@@ -1,0 +1,26 @@
+{
+  "name": "Company",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Company name"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "supplier",
+        "customer",
+        "both"
+      ],
+      "default": "supplier"
+    },
+    "industry": {
+      "type": "string",
+      "description": "Industry sector"
+    },
+    "contact_email": {
+      "type": "string",
+      "description": "Contact email"
+    },
+    "target_otif": {
